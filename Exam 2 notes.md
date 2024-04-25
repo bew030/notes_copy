@@ -372,6 +372,8 @@
     *   And that’s exactly what you’re doing when you’re designing an interface. You’re teaching the user how to use what you designed. You’re teaching them without the benefit of actually talking to them, explaining things to them, or demonstrating things for them. You’re teaching them through the design of your interface.
     *   So you have to make sure that you don’t assume they’re an expert, too. You have to overcome that expert blind spot **because we are not our users**.
 
+---
+
 **2.7 Task Analysis**
 
 **[GOAL #1] Students will understand the nature of task analysis in formalizing our understanding of user tasks.**
@@ -475,9 +477,184 @@
     *   ACTA and Skill-Based CTA are two ways of gathering the information necessary to do a cognitive task analysis
 
 
+---
+**3.7 HCI and Agile Development**
+
+**[GOAL #1] Students will understand what agile development is in the context of HCI.**
+
+
+
+*   New technologies and new eras call for new principles and new workflows. Specifically, the advent of the internet ushered in new methods for HCI. Many software developers now adopt an **Agile workflow**, which emphasizes _earlier delivery, more continuous improvement, and rapid feedback cycles_.
+    *   For those of us here in HCI, that’s exciting: we love feedback cycles. We love building them for our users and we love engaging in them ourselves.
+    *   It’s also a scary prospect, though. We’ve also discussed long prototyping processes that move from paper to wireframes to live demos, that involve lots of users in slow qualitative methodologies. And those things are all still very valuable.
+    *   But nowadays, sometimes we also need to build really fast.
+*   Think back to before the age of the internet. Developing software was expensive. It required a very specialized skillset. Software distribution was done the same way we sold coffee mugs or bananas: you’d go to the store and buy it. That distribution method was expensive as well. If you shipped software that was hard to use, the cost of fixing that was enormous: you had to mail each individual person an update disk. And the only way to get user feedback and even find out if it was usable was the same way you would do it before distribution: by having users come in for testing. All of this meant there was an enormous need to get it right the first time.
+    *   Shigeru Miyamoto, the creator of Nintendo’s best franchises, described this in terms of video games as, “A delayed game is eventually good, but a rushed game is forever bad.”
+    *   The same applied to software.
+*   Fast-forward to now -- is that still true?
+    *   Development isn’t cheap, but it’s not as expensive as it used to be: a single person can develop in a day what would taken a team of people months to do 20 years ago, thanks to advances in hardware, programming languages, and available libraries.
+    *   But more importantly, distribution for software is now essentially free. Updating software is essentially free as well. Every day, you can download new apps and have them update automatically in the background. If you release something with a bug, you can fix it and roll it out immediately.
+    *   Miyamoto’s quote is no longer as accurate because it is possible to fix games after they’re released.
+        *   Tesla regularly pushes software updates to its cars via the internet.
+        *   And perhaps most importantly, we can gather usage data from live users automatically and for free. And it isn’t just usage data: product reviews, error reports, buzz on the internet. Lots of feedback comes naturally. What this all means is there is now more incentive to build something fast and get it to users to start getting real feedback as early as possible.
+        *   This isn’t justification to just throw out the design life cycle. The majority of HCI design and research still goes through the longer process. You need several iterations through the full design life cycle for big web sites, complex apps, anything involving designing hardware, anything involving a high-profile first impression, or anything involving anything even somewhat high stakes.
+        *   But that said, there exists a new niche for rapid development. Maybe you came up with an idea for a simple Android game. In the time it would take you to go through this longer process, you could probably implement the game and get it in front of users and get a lot more feedback.
+        *   That’s what we’re discussing here ⇒ **How do you take the principles we’ve covered so far and apply them to a rapid, agile development process**?
+
+**[GOAL #2] Students will understand when it is appropriate and inappropriate to leverage more agile development techniques.**
+
+
+
+*   When should you consider these more Agile methodologies?
+    *   Lots of software development theorists have explored this space. Boehm and Turner specifically suggest that **Agile development be used only in certain circumstances**:
+        *   First, it must be **an environment with low criticality**.
+            *   By its nature, Agile development means letting users do some of the testing, so you don’t want to use it in environments where bugs or poor usability are going to lead to major repercussions.
+            *   Healthcare or financial investing, for example, wouldn’t be great places for Agile development generally speaking -- although there have been efforts to create standards that would allow the methodology to apply without compromising safety and security.
+            *   But for things like smartphone games or social media apps, the criticality is sufficiently low.
+        *   Second, it should be a **place where the requirements change often**.
+            *   One of the benefits of Agile processes is they allow teams to adjust quickly to changing expectations or needs.
+            *   A thermostat, for example, doesn’t change its requirements very often. A site like Udacity, though, is constantly adjusting to new student interests or needs.
+        *   These two components apply to the types of problems we’re working on.
+        *   If we’re working on an interface that would lend itself to an Agile process, we also must set up the team to work well within an Agile process. That means small teams that are comfortable with a culture of change, as opposed to large teams comfortable with order. So, generally, **Agile processes can be good in some cases and with the right people, but poor in others**.
+    *   ![screenshot](/images_Exam2/image3.png)
+
+
+
+*   **Paper Spotlight**: “Towards a Framework for Integrating Agile Development and User-Centred Design” by Stephanie Chamberlain, Helen Sharp, and Neil Maiden
+    *   In 2006, Chamberlain, Sharp, and Maiden investigated the conflicts and opportunities of applying agile development to user-centered design. They found, interestingly, that the two actually had significant overlap.
+        *   Both agile development and user-centered design **emphasize iterative development building on feedback** from the previous rounds.
+        *   Both place a heavy emphasis on the **user’s role in the development process**.
+        *   Both emphasize the **importance of team coherence**.
+        *   So it seems that agile methods and user-centered design agree on the most fundamental element: the importance of the user.
+    *   By comparison, the conflicts are relatively light:
+        *   User-centered design disagrees with agile development on the importance of documentation
+        *   Also disagrees on the importance of research prior to design work beginning.
+    *   But clearly the methodologies have the same objectives; they just disagree on how to best achieve it.
+    *   As a result, they propose five principles for integrating user-centered design into agile development.
+        *   Two of these were shared between the methodologies in the first place:
+            *   (1) **high user involvement**
+            *   (2) **close team collaboration**.
+        *   User-centered design’s emphasis on prototyping and the design life cycle showers up by proposing that designers run a sprint ahead of developers to perform the research necessary for user-centered design. To facilitate this, **strong project management** is necessary.
+    *   ![screenshot](/images_Exam2/image9.png)
+
+       
+*   **A/B testing**
+    *   So in some contexts, it’s now no harder to construct an actual interface than it is to construct a prototype. So, we might skip the prototyping phase altogether. However, prototypes also allow us to gather feedback from users. Even though we can now easily construct an interface, we don’t want to immediately roll out a completely untested interface to lots of people. We might be able to fix it quickly, but we’re still eroding user trust in us and wasting our users’ time.
+    *   That’s where the second facet of this comes in: A/B testing - **rapid software testing between typically two alternatives**.
+        *   Statistically, this is no different from t-tests.
+        *   What makes A/B testing unique is that we’re usually rapidly testing small changes with real users. That way we can make sure a change is positive before rolling it out to everyone. But look where testing and feedback are coming in here: they’re coming automatically with real users during normal usage of our tool. There’s no added cost to recruiting participants, and the feedback is received instantly.
+        *   With A/B testing, we’re making tiny little changes and observing the impact in terms of numerical outcomes like conversions, time on page, and so on. So, **A/B testing is reminiscent of the processor view** of the user.
+*   **Agile development techniques don’t replace the design life cycle. They just caffeinate it.**
+    *   We’re still doing needfinding, but we’re probably doing it pretty tacitly just by reading user feedback or checking out interaction logs.
+    *   We’re still brainstorming design alternatives, but we’re really just coming up with them in our head.
+    *   We’re still doing prototyping, our prototypes just happen to work.
+    *   We’re still doing evaluation by rolling our changes out to only certain participants first and making sure the response is good. The results of that evaluation then feed the same process over again.
+*   **Tips for using HCI and Agile development together**, especially for mitigating the risks to the user experience presented by Agile development.
+    *   1. **Start more traditional**. Start with a more traditional needfinding and prototyping process, and shifting to more Agile development once you have something up and running. Jakob Nielsen describes this as doing some foundational user research. Once you have something up and running, you have a way of probing the user experience further, but you need something solid to begin with, and that comes from the traditional process.
+    *   2. **Focus on small changes**. Notice that when I was doing live prototyping and A/B testing, I was making small changes to an existing interface, not building an entire site from scratch.
+    *   3. **Adopt a parallel track method**. Agile development often uses short two-week sprints of development. Under that setup, have the HCI research one sprint ahead of the implementation. The HCI team can do two-week sprints of traditional needfinding, prototyping, and low-fidelity evaluation, then hand the results to the development team for their next sprint.
+    *   4. **Be careful with consistency**. One of our design principles was consistency, both within our own interfaces and across interface design as a whole. If your interface caters to frequent visitors or users, you’ll want to be conservative in how often you mess with their expectations. If you’re designing something like a museum kiosk, though, you can be more liberal in your frequent changes.
+    *   5. **Nest your design cycles**. In Agile development you go through many small design cycles rapidly, and each cycle gives you a little bit of new information. Take all that new information you gather and use it in the context of a broader, more traditional design cycle aimed at long-term substantive improvements instead of small optimizations.
+*   **Are you working in a high stakes area, like healthcare or autonomous vehicles? What’s the cost of user failure?**
+    *   If it’s high, you probably will want to avoid agile development: after all, it’s built in large part around learning from the real failures of real users.
+    *   If that’s a user unfairly failing to reach the next level of a game, that’s fine.
+    *   If that’s a doctor entering the wrong dosage of a medication into a new interface, that’s not fine.
+*   **You’ll also need to think of development costs.**
+    *   Agile development relies on being able to get a product up and out the door quickly and change it frequently.
+    *   If any part of your design is reliant on the hardware, then agile development presents challenges: it might be easy to roll out a software update to improve a car’s screen interface, but you can’t download a car to fix a hardware problem.
+*   In many ways HCI and Agile development are a nice match:
+    *   **both emphasize feedback cycles**
+    *   **both emphasize getting user feedback**
+    *   **both emphasize rapid changes.**
+
+
 
 ---
 
+
+**3.8 Conclusion to Methods**
+
+**[GOAL #1] Students will understand the design life cycle as a complete, iterative process for interface design.**
+
+
+
+*   **Design life cycle**
+    *   We take the results of our initial iteration through the design cycle and use the results to return to the needfinding process.
+        *   That’s not to say we need to redo everything from scratch, but our prototypes and evaluation have now increased our understanding of the problem.
+        *   There are things we learn by prototyping and evaluating about the task itself.
+        *   The evaluation process may have also given us new questions we want to ask users to understand the task better.
+    *   In many ways, synthesizing our experiences with the evaluation is our next needfinding process.
+    *   We then move on to design alternatives: again, that doesn’t mean starting from scratch and coming up with all new ideas.
+        *   Here it means expanding on our current ideas, fleshing them out a bit more, and brainstorming them in terms of those personas and scenarios we used previously.
+        *   We might also come up with whole new ideas here.
+    *   Then, more prototyping.
+        *   At this point, we might discover that as we try to increase the fidelity of our prototypes, the technology or resources aren’t quite there yet.
+        *   For example, while the gesture interface might have been promising in the Wizard of Oz prototype, we don’t yet have the technology to recognize gestures that way on the go.
+        *   Or we might find that the expense related to the prototype is unfeasible, or the realizing the prototype would require violating some of our other user needs.
+        *   For example, we could do gesture recognition if we had users hold a physical device that could recognize gestures, but that might be too expensive to produce, and it might conflict with our audience’s need for a hands-free system.
+        *   So we move on with the prototypes that we can build, with the goal of getting to the feedback stage as quickly as possible.
+        *   For voice, instead of trying to build a full voice recognition system, maybe we just build a system that can recognize very simplistic voice commands. Instead of recognizing words, maybe it just recognizes the number of utterances if that’s easier to build.
+        *   For the screen, maybe we build a wireframe prototype that moves between different screens on a phone, but we don’t connect it to a real system. We still have someone Wizard of Oz it while running along with the participant. That way we focus on usability instead of things that take a lot of work to get right and might end up unnecessary if we find that the prototype isn’t useful.
+    *   Then, we evaluate again.
+        *   This time, we probably get a little more objective.
+        *   We still want data on the qualitative user experience, but we also want data on things like: how long does it take a user to perform the desired actions in the interface? What prevents them from working with the interface?
+        *   Imagine that we found, for instance, that for many exercisers, they go through places that are too loud for voice commands to work.
+        *   Or, we find that the time it takes to pull out the interface and interact is too distracting.
+        *   That information is once again useful to our ongoing iteration.
+    *   At the end of that process, we again have some higher-fidelity prototypes, but no product yet. So, we go again.
+    *   When you launch the product, instead of having a handful of users we bring in to use our interface, we have hundreds of users using it in ways we never expected
+        *   And the cycle begins again.
+        *   We have data we’re automatically collected either through usage tracking or error logs. We have user reviews or feedback they submit.
+        *   So, we jump back into needfinding using the data we have available to us.
+            *   We might find subtle needs or more novel new needs
+        *   So the process starts again, this time with live users’ data.
+        *   And in general, it never really ends.
+            *   Nowadays, you very rarely see interfaces, apps, programs, or web sites that are intentionally put up once and never changed. That might happen because the designers got busy or the company went out of business, but it’s rarely one-off by design.
+            *   And as the design evolves over time with real data, you’ll start to see nested feedback cycles: week to week small additions give way to month-to-month updates and year-to-year reinventions. In many ways, your interface becomes like a child: you watch it grow up and take on a life of its own.
+
+**[GOAL #2] Students will understand the relationship between research methods and design principles.**
+
+
+
+*   In many ways, design principles capture takeaways and conclusions found by this design life cycle in the past in ways that can be transferred to new tasks.
+*   **Map human abilities and task analysis to needfinding**
+    *   In uncovering needs, many of our needs are driven by our current understanding of human abilities.
+    *   Task analysis allows us to describe those needs, those tasks, in formal ways to equip the interface design process.
+*   **Map direct manipulation, mental models, and distributed cognition to design alternatives**
+    *   Direct manipulation gives us a family of techniques that we want to emphasize in coming up with our design alternatives.
+    *   Mental models provide us an understanding of how the design alternatives might mesh with the user’s understanding of the task.
+    *   Distributed cognition gives us a view on interface design that lends itself to design at a larger level of granularity.
+*   **Map design principles, representations and invisible interfaces to prototyping**
+    *   Design principles give us some great rules of thumb to use when creating our initial prototypes and designs.
+    *   Our understanding of representations ensures that the prototypes we create match with users’ mental models.
+    *   Invisible interfaces help us remember that the interface should be the conduit between the user and the task, not the focus of attention itself.
+*   **Map feedback cycle and interfaces and politics to evaluation**
+    *   The vocabulary of the feedback cycle, the gulfs of execution and evaluation, give us ways to evaluate the interfaces that we design.
+    *   The notion of politics in interface allow us to evaluate the interface not just in terms of its usable interactions, but in the types of society it creates or preserves.
+    *   Those principles of HCI were all found through many years of going through the design life cycle, creating different interfaces, and exploring and evaluating their impact.
+*   By leveraging those lessons, we can speed to usable interfaces much faster.
+*   **Approaches to user-centered design**
+    *   At a minimum, user-centered design advocates involving users throughout the process through surveys, interviews, evaluations, and more that we’ll talk about.
+    *   However, user-centered design can be taken to even greater extremes through a number of approaches beyond what we’ve covered.
+    *   **Participatory design**
+        *   In participatory design, all the stakeholders -- including the users themselves -- are involved as part of the design team.
+        *   They aren’t just a source of data, they’re actually members of the design team working on the problem.
+        *   That allows the user perspective to be omnipresent throughout the design process.
+        *   Of course, there’s still a danger there: generally, we are not our user, but in participatory design one of the designers is the user… but they’re just one user.
+        *   So, it’s a great way to get a user’s perspective, but we must also be careful not to over-represent that one user’s view.
+    *   **Action research**
+        *   Action research is a methodology that addresses an immediate problem, and researches it by trying to simultaneously solve it.
+        *   Data gathered on the success of the approach is then used to inform the understanding of the problem and the future approaches.
+        *   Most importantly, like participatory design, action research is undertaken by the actual users.
+        *   For example, a teacher might engage in action research by trying a new activity in his classroom and reflecting on the results, or a manager might use action research by trying a new evaluation system with her employees and noting the changes.
+    *   **Design-based research**
+        *   Design-based research is similar to action research, but it can be done by outside practitioners, too.
+            *   It’s especially common in learning sciences research.
+        *   In design-based research, designers create interventions based on current understanding of the theory and the problem, and use the success of those interventions to improve our understanding of the theory or the problem.
+        *   For example, if we believed a certain intersection had a lot of jaywalkers because the signs had poor visibility, we might interview people at the intersection for their thoughts: or, we could create a solution that assumes we’re correct, and then use it to evaluate whether or not we were correct. If we create a more clearly visible sign and it fixes the problem, then it suggests our initial theory was correct.
+        *   In all these approaches, notice iteration still plays a strong role: we never try out just one design and stop. We run through the process, create a design, try it out, and then iterate and improve on it. Interface design is never done: it just gets better and better as time goes on, while also adjusting to new trends and technologies.
+
+---
 
 **2.8 Distributed Cognition**
 
@@ -807,182 +984,4 @@
 
 
 ---
-
-
-**3.7 HCI and Agile Development**
-
-**[GOAL #1] Students will understand what agile development is in the context of HCI.**
-
-
-
-*   New technologies and new eras call for new principles and new workflows. Specifically, the advent of the internet ushered in new methods for HCI. Many software developers now adopt an **Agile workflow**, which emphasizes _earlier delivery, more continuous improvement, and rapid feedback cycles_.
-    *   For those of us here in HCI, that’s exciting: we love feedback cycles. We love building them for our users and we love engaging in them ourselves.
-    *   It’s also a scary prospect, though. We’ve also discussed long prototyping processes that move from paper to wireframes to live demos, that involve lots of users in slow qualitative methodologies. And those things are all still very valuable.
-    *   But nowadays, sometimes we also need to build really fast.
-*   Think back to before the age of the internet. Developing software was expensive. It required a very specialized skillset. Software distribution was done the same way we sold coffee mugs or bananas: you’d go to the store and buy it. That distribution method was expensive as well. If you shipped software that was hard to use, the cost of fixing that was enormous: you had to mail each individual person an update disk. And the only way to get user feedback and even find out if it was usable was the same way you would do it before distribution: by having users come in for testing. All of this meant there was an enormous need to get it right the first time.
-    *   Shigeru Miyamoto, the creator of Nintendo’s best franchises, described this in terms of video games as, “A delayed game is eventually good, but a rushed game is forever bad.”
-    *   The same applied to software.
-*   Fast-forward to now -- is that still true?
-    *   Development isn’t cheap, but it’s not as expensive as it used to be: a single person can develop in a day what would taken a team of people months to do 20 years ago, thanks to advances in hardware, programming languages, and available libraries.
-    *   But more importantly, distribution for software is now essentially free. Updating software is essentially free as well. Every day, you can download new apps and have them update automatically in the background. If you release something with a bug, you can fix it and roll it out immediately.
-    *   Miyamoto’s quote is no longer as accurate because it is possible to fix games after they’re released.
-        *   Tesla regularly pushes software updates to its cars via the internet.
-        *   And perhaps most importantly, we can gather usage data from live users automatically and for free. And it isn’t just usage data: product reviews, error reports, buzz on the internet. Lots of feedback comes naturally. What this all means is there is now more incentive to build something fast and get it to users to start getting real feedback as early as possible.
-        *   This isn’t justification to just throw out the design life cycle. The majority of HCI design and research still goes through the longer process. You need several iterations through the full design life cycle for big web sites, complex apps, anything involving designing hardware, anything involving a high-profile first impression, or anything involving anything even somewhat high stakes.
-        *   But that said, there exists a new niche for rapid development. Maybe you came up with an idea for a simple Android game. In the time it would take you to go through this longer process, you could probably implement the game and get it in front of users and get a lot more feedback.
-        *   That’s what we’re discussing here ⇒ **How do you take the principles we’ve covered so far and apply them to a rapid, agile development process**?
-
-**[GOAL #2] Students will understand when it is appropriate and inappropriate to leverage more agile development techniques.**
-
-
-
-*   When should you consider these more Agile methodologies?
-    *   Lots of software development theorists have explored this space. Boehm and Turner specifically suggest that **Agile development be used only in certain circumstances**:
-        *   First, it must be **an environment with low criticality**.
-            *   By its nature, Agile development means letting users do some of the testing, so you don’t want to use it in environments where bugs or poor usability are going to lead to major repercussions.
-            *   Healthcare or financial investing, for example, wouldn’t be great places for Agile development generally speaking -- although there have been efforts to create standards that would allow the methodology to apply without compromising safety and security.
-            *   But for things like smartphone games or social media apps, the criticality is sufficiently low.
-        *   Second, it should be a **place where the requirements change often**.
-            *   One of the benefits of Agile processes is they allow teams to adjust quickly to changing expectations or needs.
-            *   A thermostat, for example, doesn’t change its requirements very often. A site like Udacity, though, is constantly adjusting to new student interests or needs.
-        *   These two components apply to the types of problems we’re working on.
-        *   If we’re working on an interface that would lend itself to an Agile process, we also must set up the team to work well within an Agile process. That means small teams that are comfortable with a culture of change, as opposed to large teams comfortable with order. So, generally, **Agile processes can be good in some cases and with the right people, but poor in others**.
-    *   ![screenshot](/images_Exam2/image3.png)
-
-
-
-*   **Paper Spotlight**: “Towards a Framework for Integrating Agile Development and User-Centred Design” by Stephanie Chamberlain, Helen Sharp, and Neil Maiden
-    *   In 2006, Chamberlain, Sharp, and Maiden investigated the conflicts and opportunities of applying agile development to user-centered design. They found, interestingly, that the two actually had significant overlap.
-        *   Both agile development and user-centered design **emphasize iterative development building on feedback** from the previous rounds.
-        *   Both place a heavy emphasis on the **user’s role in the development process**.
-        *   Both emphasize the **importance of team coherence**.
-        *   So it seems that agile methods and user-centered design agree on the most fundamental element: the importance of the user.
-    *   By comparison, the conflicts are relatively light:
-        *   User-centered design disagrees with agile development on the importance of documentation
-        *   Also disagrees on the importance of research prior to design work beginning.
-    *   But clearly the methodologies have the same objectives; they just disagree on how to best achieve it.
-    *   As a result, they propose five principles for integrating user-centered design into agile development.
-        *   Two of these were shared between the methodologies in the first place:
-            *   (1) **high user involvement**
-            *   (2) **close team collaboration**.
-        *   User-centered design’s emphasis on prototyping and the design life cycle showers up by proposing that designers run a sprint ahead of developers to perform the research necessary for user-centered design. To facilitate this, **strong project management** is necessary.
-    *   ![screenshot](/images_Exam2/image9.png)
-
-       
-*   **A/B testing**
-    *   So in some contexts, it’s now no harder to construct an actual interface than it is to construct a prototype. So, we might skip the prototyping phase altogether. However, prototypes also allow us to gather feedback from users. Even though we can now easily construct an interface, we don’t want to immediately roll out a completely untested interface to lots of people. We might be able to fix it quickly, but we’re still eroding user trust in us and wasting our users’ time.
-    *   That’s where the second facet of this comes in: A/B testing - **rapid software testing between typically two alternatives**.
-        *   Statistically, this is no different from t-tests.
-        *   What makes A/B testing unique is that we’re usually rapidly testing small changes with real users. That way we can make sure a change is positive before rolling it out to everyone. But look where testing and feedback are coming in here: they’re coming automatically with real users during normal usage of our tool. There’s no added cost to recruiting participants, and the feedback is received instantly.
-        *   With A/B testing, we’re making tiny little changes and observing the impact in terms of numerical outcomes like conversions, time on page, and so on. So, **A/B testing is reminiscent of the processor view** of the user.
-*   **Agile development techniques don’t replace the design life cycle. They just caffeinate it.**
-    *   We’re still doing needfinding, but we’re probably doing it pretty tacitly just by reading user feedback or checking out interaction logs.
-    *   We’re still brainstorming design alternatives, but we’re really just coming up with them in our head.
-    *   We’re still doing prototyping, our prototypes just happen to work.
-    *   We’re still doing evaluation by rolling our changes out to only certain participants first and making sure the response is good. The results of that evaluation then feed the same process over again.
-*   **Tips for using HCI and Agile development together**, especially for mitigating the risks to the user experience presented by Agile development.
-    *   1. **Start more traditional**. Start with a more traditional needfinding and prototyping process, and shifting to more Agile development once you have something up and running. Jakob Nielsen describes this as doing some foundational user research. Once you have something up and running, you have a way of probing the user experience further, but you need something solid to begin with, and that comes from the traditional process.
-    *   2. **Focus on small changes**. Notice that when I was doing live prototyping and A/B testing, I was making small changes to an existing interface, not building an entire site from scratch.
-    *   3. **Adopt a parallel track method**. Agile development often uses short two-week sprints of development. Under that setup, have the HCI research one sprint ahead of the implementation. The HCI team can do two-week sprints of traditional needfinding, prototyping, and low-fidelity evaluation, then hand the results to the development team for their next sprint.
-    *   4. **Be careful with consistency**. One of our design principles was consistency, both within our own interfaces and across interface design as a whole. If your interface caters to frequent visitors or users, you’ll want to be conservative in how often you mess with their expectations. If you’re designing something like a museum kiosk, though, you can be more liberal in your frequent changes.
-    *   5. **Nest your design cycles**. In Agile development you go through many small design cycles rapidly, and each cycle gives you a little bit of new information. Take all that new information you gather and use it in the context of a broader, more traditional design cycle aimed at long-term substantive improvements instead of small optimizations.
-*   **Are you working in a high stakes area, like healthcare or autonomous vehicles? What’s the cost of user failure?**
-    *   If it’s high, you probably will want to avoid agile development: after all, it’s built in large part around learning from the real failures of real users.
-    *   If that’s a user unfairly failing to reach the next level of a game, that’s fine.
-    *   If that’s a doctor entering the wrong dosage of a medication into a new interface, that’s not fine.
-*   **You’ll also need to think of development costs.**
-    *   Agile development relies on being able to get a product up and out the door quickly and change it frequently.
-    *   If any part of your design is reliant on the hardware, then agile development presents challenges: it might be easy to roll out a software update to improve a car’s screen interface, but you can’t download a car to fix a hardware problem.
-*   In many ways HCI and Agile development are a nice match:
-    *   **both emphasize feedback cycles**
-    *   **both emphasize getting user feedback**
-    *   **both emphasize rapid changes.**
-
-
-
----
-
-
-**3.8 Conclusion to Methods**
-
-**[GOAL #1] Students will understand the design life cycle as a complete, iterative process for interface design.**
-
-
-
-*   **Design life cycle**
-    *   We take the results of our initial iteration through the design cycle and use the results to return to the needfinding process.
-        *   That’s not to say we need to redo everything from scratch, but our prototypes and evaluation have now increased our understanding of the problem.
-        *   There are things we learn by prototyping and evaluating about the task itself.
-        *   The evaluation process may have also given us new questions we want to ask users to understand the task better.
-    *   In many ways, synthesizing our experiences with the evaluation is our next needfinding process.
-    *   We then move on to design alternatives: again, that doesn’t mean starting from scratch and coming up with all new ideas.
-        *   Here it means expanding on our current ideas, fleshing them out a bit more, and brainstorming them in terms of those personas and scenarios we used previously.
-        *   We might also come up with whole new ideas here.
-    *   Then, more prototyping.
-        *   At this point, we might discover that as we try to increase the fidelity of our prototypes, the technology or resources aren’t quite there yet.
-        *   For example, while the gesture interface might have been promising in the Wizard of Oz prototype, we don’t yet have the technology to recognize gestures that way on the go.
-        *   Or we might find that the expense related to the prototype is unfeasible, or the realizing the prototype would require violating some of our other user needs.
-        *   For example, we could do gesture recognition if we had users hold a physical device that could recognize gestures, but that might be too expensive to produce, and it might conflict with our audience’s need for a hands-free system.
-        *   So we move on with the prototypes that we can build, with the goal of getting to the feedback stage as quickly as possible.
-        *   For voice, instead of trying to build a full voice recognition system, maybe we just build a system that can recognize very simplistic voice commands. Instead of recognizing words, maybe it just recognizes the number of utterances if that’s easier to build.
-        *   For the screen, maybe we build a wireframe prototype that moves between different screens on a phone, but we don’t connect it to a real system. We still have someone Wizard of Oz it while running along with the participant. That way we focus on usability instead of things that take a lot of work to get right and might end up unnecessary if we find that the prototype isn’t useful.
-    *   Then, we evaluate again.
-        *   This time, we probably get a little more objective.
-        *   We still want data on the qualitative user experience, but we also want data on things like: how long does it take a user to perform the desired actions in the interface? What prevents them from working with the interface?
-        *   Imagine that we found, for instance, that for many exercisers, they go through places that are too loud for voice commands to work.
-        *   Or, we find that the time it takes to pull out the interface and interact is too distracting.
-        *   That information is once again useful to our ongoing iteration.
-    *   At the end of that process, we again have some higher-fidelity prototypes, but no product yet. So, we go again.
-    *   When you launch the product, instead of having a handful of users we bring in to use our interface, we have hundreds of users using it in ways we never expected
-        *   And the cycle begins again.
-        *   We have data we’re automatically collected either through usage tracking or error logs. We have user reviews or feedback they submit.
-        *   So, we jump back into needfinding using the data we have available to us.
-            *   We might find subtle needs or more novel new needs
-        *   So the process starts again, this time with live users’ data.
-        *   And in general, it never really ends.
-            *   Nowadays, you very rarely see interfaces, apps, programs, or web sites that are intentionally put up once and never changed. That might happen because the designers got busy or the company went out of business, but it’s rarely one-off by design.
-            *   And as the design evolves over time with real data, you’ll start to see nested feedback cycles: week to week small additions give way to month-to-month updates and year-to-year reinventions. In many ways, your interface becomes like a child: you watch it grow up and take on a life of its own.
-
-**[GOAL #2] Students will understand the relationship between research methods and design principles.**
-
-
-
-*   In many ways, design principles capture takeaways and conclusions found by this design life cycle in the past in ways that can be transferred to new tasks.
-*   **Map human abilities and task analysis to needfinding**
-    *   In uncovering needs, many of our needs are driven by our current understanding of human abilities.
-    *   Task analysis allows us to describe those needs, those tasks, in formal ways to equip the interface design process.
-*   **Map direct manipulation, mental models, and distributed cognition to design alternatives**
-    *   Direct manipulation gives us a family of techniques that we want to emphasize in coming up with our design alternatives.
-    *   Mental models provide us an understanding of how the design alternatives might mesh with the user’s understanding of the task.
-    *   Distributed cognition gives us a view on interface design that lends itself to design at a larger level of granularity.
-*   **Map design principles, representations and invisible interfaces to prototyping**
-    *   Design principles give us some great rules of thumb to use when creating our initial prototypes and designs.
-    *   Our understanding of representations ensures that the prototypes we create match with users’ mental models.
-    *   Invisible interfaces help us remember that the interface should be the conduit between the user and the task, not the focus of attention itself.
-*   **Map feedback cycle and interfaces and politics to evaluation**
-    *   The vocabulary of the feedback cycle, the gulfs of execution and evaluation, give us ways to evaluate the interfaces that we design.
-    *   The notion of politics in interface allow us to evaluate the interface not just in terms of its usable interactions, but in the types of society it creates or preserves.
-    *   Those principles of HCI were all found through many years of going through the design life cycle, creating different interfaces, and exploring and evaluating their impact.
-*   By leveraging those lessons, we can speed to usable interfaces much faster.
-*   **Approaches to user-centered design**
-    *   At a minimum, user-centered design advocates involving users throughout the process through surveys, interviews, evaluations, and more that we’ll talk about.
-    *   However, user-centered design can be taken to even greater extremes through a number of approaches beyond what we’ve covered.
-    *   **Participatory design**
-        *   In participatory design, all the stakeholders -- including the users themselves -- are involved as part of the design team.
-        *   They aren’t just a source of data, they’re actually members of the design team working on the problem.
-        *   That allows the user perspective to be omnipresent throughout the design process.
-        *   Of course, there’s still a danger there: generally, we are not our user, but in participatory design one of the designers is the user… but they’re just one user.
-        *   So, it’s a great way to get a user’s perspective, but we must also be careful not to over-represent that one user’s view.
-    *   **Action research**
-        *   Action research is a methodology that addresses an immediate problem, and researches it by trying to simultaneously solve it.
-        *   Data gathered on the success of the approach is then used to inform the understanding of the problem and the future approaches.
-        *   Most importantly, like participatory design, action research is undertaken by the actual users.
-        *   For example, a teacher might engage in action research by trying a new activity in his classroom and reflecting on the results, or a manager might use action research by trying a new evaluation system with her employees and noting the changes.
-    *   **Design-based research**
-        *   Design-based research is similar to action research, but it can be done by outside practitioners, too.
-            *   It’s especially common in learning sciences research.
-        *   In design-based research, designers create interventions based on current understanding of the theory and the problem, and use the success of those interventions to improve our understanding of the theory or the problem.
-        *   For example, if we believed a certain intersection had a lot of jaywalkers because the signs had poor visibility, we might interview people at the intersection for their thoughts: or, we could create a solution that assumes we’re correct, and then use it to evaluate whether or not we were correct. If we create a more clearly visible sign and it fixes the problem, then it suggests our initial theory was correct.
-        *   In all these approaches, notice iteration still plays a strong role: we never try out just one design and stop. We run through the process, create a design, try it out, and then iterate and improve on it. Interface design is never done: it just gets better and better as time goes on, while also adjusting to new trends and technologies.
-
 **EXAM #2 END**
