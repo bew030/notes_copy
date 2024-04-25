@@ -1,5 +1,270 @@
 # **EXAM #2 NOTES**
 
+**3.6 Evaluation**
+
+**[GOAL #1] Students will understand the role of evaluation in the design life cycle.**
+
+
+
+*   The heart of user-centered design is getting frequent feedback from users.
+*   **Evaluation**: we take what we’ve designed and put it in front of users to get their feedback.
+    *   But just as different prototypes serve different functions at different stages of the design process, so also our methods for evaluation need to match as well.
+    *   Our goal is to apply multiple evaluation techniques to constantly center our designs around the user. That’s why evaluation is a foundation of user-centered design -- just like we wanted to understand the user and the task before beginning to design, we also want to understand how the user relates to the design at every stage of the design life cycle.
+    *   **To succeed in HCI, you need a good evaluation plan.**
+        *   In industries like healthcare and education, that’s initially going to involve getting some time with experts outside the real context of the task. Bringing in doctors, nurses, and patients, and exploring their thoughts on the prototypes you’ve designed.
+        *   In some places, like education, you might be able to evaluate with real users even before the interface is ready, but in others, like healthcare, the stakes are high enough that you’ll only want real users using the interface when you’re certain of its effectiveness and reliability.
+        *   In some emerging areas, you’ll also be fighting multiple questions in evaluation.
+            *   Take virtual reality, for example: most people you encounter haven’t used virtual reality before. There is going to be a learning curve.
+            *   How are you going to determine whether the learning curve is acceptable or not? If the user runs into difficulties, how can you tell if those come from your interface or if they’re part of the fundamental VR learning experience?
+
+**[GOAL #2] Students will understand when each type of evaluation is relevant.**
+
+
+
+*   The type of evaluation we employ is **tightly related to where we are in our design process**.
+*   **Qualitative evaluation:** evaluation that emphasizes the totality of a phenomenon
+    *   Early on, we want more qualitative feedback.
+        *   We want to know what they like, what they don’t like, whether it’s readable, whether it’s understandable.
+    *   Later on, we want to know if it’s usable.
+        *   Does it minimize their workload? Is it intuitive? Is it easy to learn? What’s hard? What were you thinking while using this interface? What was your goal when you took that particular action?
+    *   The methods we use for qualitative evaluation are very similar to the methods we used for needfinding: **Interviews, think-aloud protocols, focus groups, surveys, post-event protocols**: we used these methods to get information about the task in the first place, and now we can use these techniques to get feedback on how our prototype changes the task.
+    *   **Questions to ask when designing a qualitative evaluation**
+        *   **1. Is this based on prior experience, or is it based on a live session?**
+            *   If you’re doing a qualitative evaluation on an interface that the user has used in the past, then generally you’re probably doing needfinding: you’re looking for weaknesses in an already-in-use interface to improve.
+        *   For the rest of these questions, we’ll assume that you’re evaluating an interface the user is about to see for the first time.
+        *   **2. Is this synchronous or asynchronous?** Are you going to watch the participant live, or are they going to complete the evaluation on their own?
+            *   Synchronous is usually beneficial because we can see a much greater amount of the interaction that is taking place.
+            *   However, asynchronous is often easier to carry out, especially with larger populations.
+            *   I’d generally recommend synchronous whenever possible, but asynchronous is better than nothing.
+        *   **3. How many prototypes will they be evaluating? **You might have users evaluate only one prototype, or you might have them look at multiple.
+            *   If you have them look at multiple, you want to make sure to vary the order between different participants: otherwise you might get consistently different feedback just because the user is already familiar with the problem domain when they get to a second interface.
+        *   **4. When do you want to get feedback from the user?**
+            *   There are two main protocols: think-aloud and post-event.
+            *   With a think-aloud protocol, you have users think out loud while they’re using the interface.
+            *   This is good because you get to find out exactly what they’re thinking and seeing. However, thinking aloud tends to bias the way users use the interface.
+            *   They may act more deliberately and less intuitively, or put forth greater effort.
+            *   Post-event protocols ask the user to wait until the end to give their feedback, which can lead to more natural interactions while they play with the interface.
+            *   However, note that users are often subpar at explaining why they like or dislike things or why they made certain decisions, so you shouldn’t take everything the user says at face value.
+        *   **5. Do you want this feedback from individuals or from groups?**
+            *   Focus groups are used when multiple users talk together about their experiences. This can lead to better explanations, but it can also bias users toward the stronger personalities in the group.
+            *   Individual interviews or surveys force the user to be the only source of knowledge, but that means the user isn’t biased by other outside views.
+            *   As has become a trend, you’ll notice there are strengths and weaknesses with every approach, so we should vary what we do often.
+    *   **Capturing qualitative evaluation**
+        *   With qualitative research, we want to capture as much of the session as possible because things could come up that we don’t anticipate.
+        *   When selecting a way to capture your qualitative evaluation, ask yourself: will my subjects find the camera intrusive? Am I capturing what happens on screen? How difficult will this data be to analyze?
+        *   **Actually record the session with video.**
+            *   **Pros**: automated/automatic, captures everything/comprehensive, allows us to focus on administering the session instead of capturing it (passive)
+            *   **Cons**: It’s intrusive, it doesn’t capture on-screen interactions very well (screen-less), and it’s difficult to analyze. Someone has to watch it.
+            *   Some of these issues can be resolved -- we can sync the video capture with screen capture, for instance.
+            *   However, if we’re dealing with children, at-risk populations, or delicate subject matter, the intrusiveness of a camera can be overwhelming.
+        *   **Note-taking**
+            *   **Pros**: Cheap and easy, non-intrusive, easier to analyze than video
+            *   **Cons**: Slow, not comprehensive (limited), interferes with administration (manual)
+            *   If you’re going to use note-taking as your method for capturing qualitative evaluation, I recommend you have two people: a note-taker and an administrator. That lets each focus on their own responsibilities.
+        *   **Software logging: **If we’re designing software, actually log the behavior in the software.
+            *   This is in some ways the best of both worlds.
+            *   **Pros**: Automatic/automated, allows us to focus on administering the session (passive), non-intrusive, analyzable
+            *   **Cons**: Not as comprehensive (limited), very low-level (narrow), requires working software (tech-sensitive)
+    *   **Tips for conducting successful evaluations**
+        *   1. **Run pilot studies**. Recruiting participants is hard. You want to make sure that once you start working with real subjects, you’re ready to gather real useful data. So, try out your experiment with friends, family, or coworkers before trying it with real subjects to iron out the kinks in your design and directions.
+        *   2. **Focus on feedback**. It’s tempting in qualitative evaluations to spend too much time trying to teach this one user. If the user criticizes an element of the prototype, you don’t need to explain to them the rationale. Your goal is to get feedback to design the next interface, not to teach the current user.
+        *   3. **Use questions when users get stuck**. That way, you get some information on why they’re stuck and what they’re thinking. Those questions can also be used to guide users to how they should use it to make the session less instructional.
+        *   4. **Instruct users what to do, but not how to do it**. This doesn’t always apply, but most often we want to design interfaces that users can use without any instruction whatsoever. So, in performing qualitative evaluation, give them instruction on what to do, but let them try to figure out how to do it. If they try to do it differently than you expect, then you know how to design the next interface.
+        *   5. **Capture satisfaction**. Sometimes we can get so distracted by whether or not people can use our interface that we forget to ask whether they like using our interface! So, make sure to capture user satisfaction in your qualitative evaluation.
+*   **Empirical evaluation: **evaluation based on numeric summaries or observations of a phenomenon
+    *   Most empirical evaluations are comparisons
+    *   This is where we actually do some controlled experiments and evaluate the results quantitatively.
+    *   For that, we need many more participants, and we also want to make sure we’ve addressed the big qualitative feedback first.
+    *   Then at the end, we might want to know something more quantitative.
+    *   We might want to actually measure whether the time to complete a task has changed or whether the number of sales has increased.
+    *   Goal: strong conclusions!
+    *   **Designing an empirical evaluation**
+        *   We have multiple conditions, which we call **treatments**.
+            *   These treatments could be different interfaces, different designs, different colors, whatever we’re interested in investigating.
+            *   Our goal here is to investigate the comparison between the treatments, and end up with a conclusion about how they’re different.
+            *   However, we have to be careful to make sure that the differences we observe are really due to the differences between the treatments, not due to other factors.
+                *   For example, imagine we were testing the difference between two logos, and we wanted to know what worked better: orange or teal.
+                *   However, we also make one a circle while the other is a triangle. In the end, we wouldn’t be able to comment on orange vs. teal, we could only comment on orange circle vs. teal triangle.
+                *   To make a judgment about the color, we need to make sure the color is the only thing we’re comparing.
+                *   Of course, here, this sounds silly. In practice, though, differences can be more subtle. If you were testing different layouts, you might miss that one loads a bit faster, or one uses prettier images.
+        *   Once we’ve designed the treatments, it’s time to design the experiment.
+            *   Our first question is: what do participants do? Does each participant participate in one treatment, or both?
+                *   If each participant only participates in one treatment, then our next step is easy: we split the randomly participants into two groups, and one-by-one, we have them go through their treatment. At the end, we have data from participants in one condition and data from participants in the other, and we can compare them. This is called **between-subjects** design.
+                *   We can also do a **within-subjects** experiment. With a within-subjects experiment, each participant participates in both treatments. 
+                    *   Within-subjects is beneficial because it allows us to gather twice as much data if our participant pool is limited: here, each interface would be used by 16 participants instead of just 8.
+                    *   It also allows us to do within-subjects comparisons, seeing how each individual participant was affected instead of the groups as a whole. That can help us identify some more subtle effects, like if different people had different strengths.
+                    *   However, within-subjects requires more of our subjects’ time, which can be a big problem if the treatments are each long.
+                *   However, a major lurking variable could potentially be which treatment each participant sees first, so we still have to randomly assign participants to treatment groups. But instead of assigning participants to which treatment they’re receiving, we’re **randomly assigning** them to what order they’ll receive the treatments in. That way, if the order that participants receive the treatments matters, we’ll see it.
+                    *   Throughout this example, we’ve also glossed over an important detail: random assignment. Random assignment to treatments help us control for bias. Imagine if all the smartest participants, or all the women, or all the punctual participants were assigned to the same treatment. That would clearly affect our results.
+                    *   So, we randomly assign people to groups. That might also sound obvious, but imagine if your treatment involved a lot of physical set-up. It would be tempting to run the first eight participants on one set-up, and the second eight on the other. But what if that means the more punctual participants were all in the first condition? Or what if you got better at administering the experiment during the first condition, so that participants in the second condition had a generally smoother experience? All of these are lurking variables that are controlled by random assignment.
+    *   **Hypothesis testing**
+        *   Did results arise by random chance?
+        *   Are results different enough to conclude that they’re really different?
+        *   **Null and alternative hypotheses**
+            *   Null hypothesis: we initially hypothesize that two things are equal.
+            *   The alternative hypothesis is that they are not equal.
+            *   We want to see if the difference is big enough to accept the alternative hypothesis rather than the null hypothesis; we generally do that if there is less than a 5% chance that the difference could have arisen by random chance.
+            *   In that case, we say that the difference is “statistically significant”.
+        *   This is the general process of hypothesis testing: assuming things are the same, and seeing if the data is sufficient to prove they’re different.
+        *   **The specific kind of hypothesis test you conduct depends on the kind of data that you have.**
+            *   For **nominal data**, we generally want to use a **Chi-square test**.
+                *   A Chi-square test checks to see if the distribution of values to a number of buckets is the same across two conditions.
+                *   Here, our independent variable is the conditions, treatments, etc., and our dependent variable is the distribution of values.
+                *   Our null hypothesis is that the distributions are not different, and our alternative is that they are different.
+            *   For **ordinal data**, our process is largely the same (**Chi-square test, Kolmogorov-Smirnov test, median test**)
+                *   Our independent variable are the conditions or treatments, and our dependent variable is the distribution of values across those categories.
+                *   Our null hypothesis is still that there are no differences, and our alternative is that there are differences.
+                *   For that reason, we can use the same Chi-square test on ordinal data that we used on nominal data.
+                *   However, that isn’t the absolute best thing to do: a Chi-square test doesn’t understand that the values are ordered, and so it doesn’t understand that a systematic shift across the categories is probably more notable.
+                *   So, we might instead use a test called the Kolmogorov-Smirnov test, which acts similar to a Chi-square test but with additional knowledge of the order of the categories.
+                *   We might also use a median test, which tests to see whether the medians of the samples are the same.
+                *   It’s also not uncommon to make the assumption that the ordinal data is actually interval data and use the tests specifically developed for interval data; this isn’t a good thing to do because it assumes that the ordinal categories are evenly spaced, but it’s still not uncommon to do so because of the relative ease of the test.
+            *   For **interval and ratio data**, the types of tests we use shift.
+                *   If we’re comparing between only two treatments or conditions, then we’ll use what’s called a **Student’s t-test**.
+                    *   A t-test lets us straightforwardly compare the means of two samples to see if there’s a significant chance that they’re different.
+                    *   Here, our independent variable is whatever is different about the samples, and our dependent variable is the observed values.
+                    *   Our null hypothesis is that the samples aren’t different, and our alternative is that they are.
+                    *   This same test can be used for interval and ratio data because it isn’t dependent on there existing an absolute 0 point.
+                    *   It’s worth noting that we’re only supposed to use t-tests when the data distribution is normal. If it isn’t, we should use things like the Mann-Whitney U test or the Kruskal-Wallis H test… but those topics are out of our scope. Generally, a Chi square test and a t-test will get you most of what you need… at least until we have more than three treatments.
+                *   What if we wanted to test three interfaces at the same time?
+                    *   You might be tempted to just do three t-tests or three Chi-square tests, one on each pair. This is called **repeated testing**, and the problem is that it raises the likelihood that we’ll find something that isn’t actually true, which is called a Type I Error.
+                    *   **Type 1 error**: also known as a false positive - occurs when a researcher incorrectly rejects a true null hypothesis. This means that your report that your findings are significant when in fact they have occurred by chance
+                    *   Remember, we said that we reject a null hypothesis if there’s less than a 5% chance that the data could have been so different due to randomness alone. That means that every time we run an additional test, we’re taking a 1-in-20 chance of finding something that isn’t there. So instead, we need a single test that can evaluate multiple conditions at once.
+                    *   **Chi-square test**
+                        *   For nominal and ordinal data, fortunately a Chi-square test can natively handle more than two conditions: we just have to put those conditions in.
+                        *   The weakness here is that it doesn’t tell us what is different; it merely tells us that there exist differences.
+                        *   So, if the Chi-square test on all the groups shows a difference, it’s acceptable to then follow-up with pairwise Chi-square tests between the conditions to drill into what the difference actually is.
+                    *   For interval and ratio data, however, we need to use a different test altogether: **an Analysis of Variance, or ANOVA**.
+                        *   A one-way ANOVA test lets us compare between three or more groups simultaneously. So, we could test between three or four different interfaces at the same time.
+                        *   We can even do something called a two-way ANOVA, where we look at two independent variables at the same time. We could check three interfaces against two genders to see if performance is a function of both gender and interface selection.
+                        *   So, ANOVA is what we use when we have more than two categories and interval or ratio data.
+                    *   Notice, however, that there’s still one assumption in every test we’ve looked at so far: we’ve always assumed that the independent variable is nominal. What if the independent variable was instead interval or ratio? We might want to look at the relationship between time using an interface and speed completing a certain task to understand the learning curves for different interfaces.
+                        *   We could do this by breaking the interval data into categories, but we could also do this by performing a regression. **Regression analyses** are used when both the independent and dependent variables are interval or ratio data.
+            *   **Binomial data**
+                *   A **binomial test** is used when we have binomial data. Binomial data is data with only two possible outcomes, like a coin flip. For us, we might have outcomes like ‘success’ or ‘failure’. We could be curious which interface allows a user to succeed at a task with greater frequency.
+                *   What can be tricky here is that our data actually looks continuous: we might say “in Treatment 1, users succeed 55.4% of the time, while in Treatment 2, users succeed 46.5% of the time.” That looks continuous.
+                *   Due to some details of how the math works, though, we don’t use standard t-tests with binomial data: instead, we use specific binomial t-tests.
+                *   There are two kinds: with a one-sample binomial t-tests, we test to see if a distribution is different from some arbitrary number. For example, we could test a probability against random chance by testing it against 0.5.
+                *   With a two-sample binomial t-test, we test to see if two distributions are different. So, we could test to see if one interface leads to success more often than the other.
+            *   Even here, we’re only scratching the surface of the tests that are out there. There are also paired tests, repeated measures tests, tests with one tail vs. two tails… but that’s all advanced stuff. 
+    *   **Tips for doing empirical evaluations**
+        *   1. **Control what you can, document what you can’t**. Try to make your treatments as identical as possible. However, if there are systematic differences between them, document and report that.
+        *   2. **Limit your variables**. It can be tempting to try to vary lots of different things and monitor lots of other things, but that just leads to noisy, difficult data that probably will generate some false conclusions. Instead, focus on varying only 1 or 2 things, and monitor only a handful of things in response. There’s nothing at all wrong with only modifying one variable and only monitoring one variable.
+        *   3. **Work backwards in designing your experiment**. A common mistake I’ve seen is to just gather a bunch of data and figure out how to analyze it later. That’s messy and doesn’t lead to very reliable conclusions. Decide at the start what question you want to answer, then decide the analysis to use, then decide the data to gather. 
+        *   4. **Script your analyses in advance**. Ronald Coase once said, “If you torture the data long enough,  nature will always confess.” What the quote means is that if we analyze and reanalyze data long enough, we can always find conclusions, but that doesn’t mean they’re actually there. So, decide in advance what analysis you’ll do, and do it -- if it doesn’t give you the results you want, don’t reanalyze it until it does.
+        *   5. **Pay attention to power**. Power refers to the size of a difference that a test can detect, and generally it’s dependent on how many participants you have. If you want to detect a small effect, then you’ll need a lot of participants. If you only care about detecting a big effect, you can get by with fewer.
+*   **Empirical Tests (IV = Independent Variables, DV = Dependent Variables)**
+*   ![screenshot](/images_Exam2/image7.png)
+*   **Predictive evaluation: **evaluation based on systematic application of pre-established principles and heuristics
+    *   Predictive evaluation is specifically evaluation without users.
+    *   In user-centered design, this is obviously not our favorite kind of evaluation.
+    *   Evaluation with real users, though, is oftentimes slow, so it’s useful for us to have ways we can do some simple evaluation on a day-to-day basis. Predictive evaluation is alright to use as part of a rapid feedback process. It lets us keep the user in mind even if we’re not bringing the user into the conversation.
+    *   Along the way, we might also want to iterate more quickly by predicting what the results of the user evaluation will be.
+    *   The important thing is to make sure we’re using it appropriately: predictive evaluation shouldn’t be used where we could be doing qualitative or empirical evaluation; it should be used where we wouldn’t otherwise be doing any evaluation.
+    *   **Types of predictive evaluation**
+        *   **Heuristic evaluation**: simply to hand our interface and these guidelines to a few experts to evaluate.
+            *   Each individual evaluator inspects the interface alone, and identifies places where the interface violates a heuristic.
+            *   We might sit with the expert while they perform the evaluation, or they might generate a report.
+            *   Heuristics are useful because they give us small snapshots into the way people might think about our interfaces.
+            *   If we take those heuristics to an extreme, though, we could go so far as to develop models of the way people think about our interfaces.
+        *   During our needfinding exercises, we developed a model of our users’ tasks. **Model-based evaluation**: we take that model and trace through it in the context of the task.
+            *   Let’s use a GOMS model as an example.
+            *   Just as we computed a GOMS model for what users did in some context, we can compute a GOMS model for what they will do in our new interface.
+            *   Then, we can compare these models side-by-side to see how our interface changes the task and evaluate whether it aids efficiency.
+            *   We can also use our models of user profiles to evaluate whether the new design meets these criteria.
+            *   If we take model-based evaluation to an extreme, we can actually get to the point of simulation-based evaluation.
+        *   **AI agents**
+            *   At that point, we might construct an artificially intelligent agent that interacts with our interface the way a human would. Ivory and Hearst did some research on such automated evaluation back in 2001.
+            *   More recently, work has been done to create even more human-like models of users, like some work done by a research group at the Human-Centered Design Group at the Institute for Information Technology in Germany.
+            *   Developing that agent is an enormous task on its own, but if we’re working on a big long-term project like Facebook or in a high-stakes environment like air traffic controlling, having a simulation of a human that we can run hundreds of thousands of times on different interface prototypes would be extremely useful.
+        *   **Cognitive walk-through**: most likely the most common type of predictive evaluation you’ll encounter
+            *   In a cognitive walkthrough, we step through the process of interacting with an interface, mentally simulating at each stage what the user is seeing, thinking, and doing.
+            *   At every stage of the process, I want to investigate this from the perspective of the gulfs of execution and evaluation.
+                *   Is it reasonable to expect the user to cross the gulf of execution? Is the right action sufficiently obvious? Is the response to the action the one the user would expect?
+                *   Is it reasonable to expect the feedback to cross the gulf of evaluation? Does the feedback show the user what happened? Does the feedback confirm the user chose the right action?
+            *   The weakness of cognitive walkthroughs is that we’re the designers, so it likely seems to us that the design is fine. After all, we designed it.
+            *   But if you can sufficiently put yourself in the user’s shoes, you can start to uncover some useful takeaways without involving real users.
+*   **Evaluation timeline**
+    *   When we discussed prototyping, we talked about how over time, our prototypes will get higher and higher fidelity. Something similar happens with evaluation: ⇒ **Over time, our evaluation methods will change**. The evaluations we use early on differ from what we likely use later.
+    *   **Purpose: Formative vs summative**
+        *   Throughout most of the design process, our evaluations are **formative**, meaning their primary purpose is to help us redesign and improve our interface.
+        *   At the end, though, we might want to do something more **summative** to conclude the design process, especially if we want to demonstrate that the new interface is better.
+        *   ![screenshot](/images_Exam2/image20.png)
+    *   **Approach: Qualitative vs empirical vs predictive**
+        *   Our early evaluations are likely to be more interpretive, qualitative, and informal. Their goal is to help us improve.
+        *   Our later evaluations are likely to be more empirical, controlled, and formal. Their goal is to demonstrate or assess change.
+        *   ![screenshot](/images_Exam2/image10.png)
+    *   **Data: Qualitative vs quantitative**
+        *   Our early data is likely to be more qualitative, while our later data is likely to be more quantitative.
+        *   ![screenshot](/images_Exam2/image12.png)
+    *   **Setting: Lab testing vs field testing**
+        *   Where the evaluation takes place: in the controlled lab environment or in the field.
+        *   Generally, when we’re testing early interfaces, we probably want to do it in more of a lab setting, not live.
+        *   Later on, we might do real live field testing.
+        *   That lets us focus exclusively on the interface early on, then transition to focusing on the interface in context later.
+        *   ![screenshot](/images_Exam2/image17.png)
+    *   Of course, none of these are hard and fast rules: we’ll likely do some qualitative evaluation later sometimes, or some field testing early, but, in general, this is likely the order we’re likely to follow.
+*   **Steps to ensure your evaluation is useful**
+    *   Regardless of whether we’re doing qualitative, empirical, or predictive evaluation, these steps remain the same. Those different types of evaluation just fill in the experiment we design, and inform the performance measures, data analysis, and conclusions.
+    *   ![screenshot](/images_Exam2/image18.png)
+    *   **1. Define the task you’re examining.**
+        *   Depending on your place in the design process, this could be very large or very small.
+        *   If we were designing Facebook, it could be as simple as posting a status update or as complicated as navigating amongst and using several pages.
+        *   It could involve context and constraints, like taking notes while running or looking up a restaurant address without touching the screen.
+        *   Whatever it is, we want to start by clearly identifying what task we’re going to investigate.
+    *   **2. Define the performance measures.**
+        *   How are we going to evaluate the user’s performance?
+        *   Qualitatively, it could be based on their own spoken or written feedback about the experience.
+        *   Quantitatively, we could measure efficiency in certain activities or count the number of mistakes.
+        *   Defining performance measures helps us avoid confirmation bias: it makes sure we don’t just pick out whatever observations confirm our hypotheses.
+    *   **3. Develop the experiment.**
+        *   How will we find users’ performance on the performance measures?
+        *   If we’re looking qualitatively, will we have them think aloud while using the tool, or will we have them send in a survey after they’re done?
+        *   If we’re looking quantitatively, what will we measure? What will we control, and what will we vary?
+        *   This is also where we ask questions about whether our assessment measures are reliable and valid, and whether the users we are testing are generalizable.
+    *   **4. Recruit participants.**
+        *   As part of the ethics process, we make sure we’re recruiting participants who are aware of their rights and contributing willingly.
+    *   **5. Do the experiment!**
+        *   We have them walk through what we outlined previously.
+    *   **6. Analyze the data.**
+        *   We focus on what the data informs us about our performance measures.
+        *   It’s important that we stay close to what we outlined initially -- it can be tempting to just look for whatever supports our design, but we want to be impartial.
+        *   If we find some evidence that suggests our interface is good in ways we didn’t anticipate, we can always do a follow-up experiment to test if we’re right.
+    *   **7. Summarize the data in a way that informs our ongoing design process.**
+        *   What did our data say was working? What could be improved?
+        *   The results of this experiment then become a part of our design life cycle.
+        *   We investigated users’ needs, developed alternatives, made a prototype, and put the prototype in front of users.
+        *   Based on this experience, we now have the data to develop a better understanding of the users’ needs, to revisit our alternatives, and to improve our prototypes by raising their fidelity for further testing and incorporating the lessons we just learned.
+        *   ![screenshot](/images_Exam2/image5.png)
+**[GOAL #3] Students will understand the type of data that comes out of each type of evaluation, and how it can be used.**
+*   **Reliability**: whether or not some assessment of some phenomenon is consistent (returns the same results for the same phenomenon).
+    *   In an assessment measure, we want it to be reliable across multiple trials. Otherwise its conclusions are random and not very useful
+    *   _If we were to conduct the same procedure again, how likely is it that we’d get the same results?_ That’s reliability.
+*   **Validity**: how accurately an assessment measures reality (if the results actually reflect the underlying phenomenon)
+    *   An assessment could be completely reliable, but completely inaccurate.
+    *   Validity is closely connected to a principle called generalizability.
+    *   _How accurately does our data actually capture the real-world phenomenon we care about?_ That’s validity.
+*   **Generalizability**: the extent to which we can apply lessons we learn in our evaluation to broader audiences of people (if the results can be used to predict phenomena beyond what it measured)
+    *   For example, we might find the kinds of people that volunteer for usability studies have different preferences than the regular user. So, the conclusions we find in those volunteers might not be generalizable in measuring what we want to measure.
+    *   _To what extent can we apply these conclusions to people that weren’t in the evaluation?_ That’s generalizability.
+*   **Precision**: measure of how specific some assessment is (the level of detail a measurement supplies)
+    *   _How specific are our conclusions and observations?_ That’s precision.
+*   **Tips on what you might choose to evaluate**
+    *   In designing evaluations, it’s **critical that we define what we’re evaluating**.
+    *   Without that, we generally tend to bottom out in vague assessments about whether users like our interfaces or not.
+    *   1. **Efficiency**. How long does it take users to accomplish certain tasks? This is one of the classic metrics for evaluating interfaces: can one interface accomplish a task in fewer actions or less time than another? You might test this with predictive models, or you might actually time users in completing these tasks. Still, this paints a narrow picture of usability.
+    *   2. **Accuracy**. How many errors do users commit while accomplishing the task? This is typically a pretty empirical question, although we could address it qualitatively as well. Ideally, we want an interface that reduces the number of errors a user commits while performing a task. Both efficiency and accuracy, however, examine the narrow setting of an expert user using an interface. That brings us to the third metric...
+    *   3. **Learnability**. Sit a new user down in front of the interface. Define some standard for expertise. How long does it take the user to hit that level of expertise? Expertise here might range from performing a particular action to something like creating an entire document.
+    *   4. **Memorability**. Similar to learnability, memorability refers to the user’s ability to remember how to use an interface over time. Imagine you have a user learn an interface, then leave and come back a week later. How much do they remember? Ideally, you want interfaces that need only be learned once, which means high memorability.
+    *   5. **Satisfaction**. When we forget to look for the other metrics, we bottom-out in a general notion of ‘satisfaction’, but that doesn’t mean it’s unimportant. We need to operationalize it, though. Experience is things like users’ enjoyment of the system or the cognitive load they experience while using the system. To avoid social desirability bias, we might want to evaluate this in creative ways, like finding how many participants actually download an app they tested after the session is over.
+    *   Regardless of what you want to evaluate, it’s important that you very clearly articulate at the beginning: what you’re evaluating, what data you’re gathering, and what analysis you will use. These three things should match up to address your research questions.
+
+**[GOAL #4] Students will understand each individual type of evaluation and what conclusions it can generate.**
+*   See the giant outline above
+*   ![screenshot](/images_Exam2/image22.png)
+
+---
+
 **2.6 Mental Models and Representations**
 
 **[GOAL #1] Students will understand the nature of mental models in feedback cycles.**
@@ -309,271 +574,6 @@
 
 ---
 
-
-**3.6 Evaluation**
-
-**[GOAL #1] Students will understand the role of evaluation in the design life cycle.**
-
-
-
-*   The heart of user-centered design is getting frequent feedback from users.
-*   **Evaluation**: we take what we’ve designed and put it in front of users to get their feedback.
-    *   But just as different prototypes serve different functions at different stages of the design process, so also our methods for evaluation need to match as well.
-    *   Our goal is to apply multiple evaluation techniques to constantly center our designs around the user. That’s why evaluation is a foundation of user-centered design -- just like we wanted to understand the user and the task before beginning to design, we also want to understand how the user relates to the design at every stage of the design life cycle.
-    *   **To succeed in HCI, you need a good evaluation plan.**
-        *   In industries like healthcare and education, that’s initially going to involve getting some time with experts outside the real context of the task. Bringing in doctors, nurses, and patients, and exploring their thoughts on the prototypes you’ve designed.
-        *   In some places, like education, you might be able to evaluate with real users even before the interface is ready, but in others, like healthcare, the stakes are high enough that you’ll only want real users using the interface when you’re certain of its effectiveness and reliability.
-        *   In some emerging areas, you’ll also be fighting multiple questions in evaluation.
-            *   Take virtual reality, for example: most people you encounter haven’t used virtual reality before. There is going to be a learning curve.
-            *   How are you going to determine whether the learning curve is acceptable or not? If the user runs into difficulties, how can you tell if those come from your interface or if they’re part of the fundamental VR learning experience?
-
-**[GOAL #2] Students will understand when each type of evaluation is relevant.**
-
-
-
-*   The type of evaluation we employ is **tightly related to where we are in our design process**.
-*   **Qualitative evaluation:** evaluation that emphasizes the totality of a phenomenon
-    *   Early on, we want more qualitative feedback.
-        *   We want to know what they like, what they don’t like, whether it’s readable, whether it’s understandable.
-    *   Later on, we want to know if it’s usable.
-        *   Does it minimize their workload? Is it intuitive? Is it easy to learn? What’s hard? What were you thinking while using this interface? What was your goal when you took that particular action?
-    *   The methods we use for qualitative evaluation are very similar to the methods we used for needfinding: **Interviews, think-aloud protocols, focus groups, surveys, post-event protocols**: we used these methods to get information about the task in the first place, and now we can use these techniques to get feedback on how our prototype changes the task.
-    *   **Questions to ask when designing a qualitative evaluation**
-        *   **1. Is this based on prior experience, or is it based on a live session?**
-            *   If you’re doing a qualitative evaluation on an interface that the user has used in the past, then generally you’re probably doing needfinding: you’re looking for weaknesses in an already-in-use interface to improve.
-        *   For the rest of these questions, we’ll assume that you’re evaluating an interface the user is about to see for the first time.
-        *   **2. Is this synchronous or asynchronous?** Are you going to watch the participant live, or are they going to complete the evaluation on their own?
-            *   Synchronous is usually beneficial because we can see a much greater amount of the interaction that is taking place.
-            *   However, asynchronous is often easier to carry out, especially with larger populations.
-            *   I’d generally recommend synchronous whenever possible, but asynchronous is better than nothing.
-        *   **3. How many prototypes will they be evaluating? **You might have users evaluate only one prototype, or you might have them look at multiple.
-            *   If you have them look at multiple, you want to make sure to vary the order between different participants: otherwise you might get consistently different feedback just because the user is already familiar with the problem domain when they get to a second interface.
-        *   **4. When do you want to get feedback from the user?**
-            *   There are two main protocols: think-aloud and post-event.
-            *   With a think-aloud protocol, you have users think out loud while they’re using the interface.
-            *   This is good because you get to find out exactly what they’re thinking and seeing. However, thinking aloud tends to bias the way users use the interface.
-            *   They may act more deliberately and less intuitively, or put forth greater effort.
-            *   Post-event protocols ask the user to wait until the end to give their feedback, which can lead to more natural interactions while they play with the interface.
-            *   However, note that users are often subpar at explaining why they like or dislike things or why they made certain decisions, so you shouldn’t take everything the user says at face value.
-        *   **5. Do you want this feedback from individuals or from groups?**
-            *   Focus groups are used when multiple users talk together about their experiences. This can lead to better explanations, but it can also bias users toward the stronger personalities in the group.
-            *   Individual interviews or surveys force the user to be the only source of knowledge, but that means the user isn’t biased by other outside views.
-            *   As has become a trend, you’ll notice there are strengths and weaknesses with every approach, so we should vary what we do often.
-    *   **Capturing qualitative evaluation**
-        *   With qualitative research, we want to capture as much of the session as possible because things could come up that we don’t anticipate.
-        *   When selecting a way to capture your qualitative evaluation, ask yourself: will my subjects find the camera intrusive? Am I capturing what happens on screen? How difficult will this data be to analyze?
-        *   **Actually record the session with video.**
-            *   **Pros**: automated/automatic, captures everything/comprehensive, allows us to focus on administering the session instead of capturing it (passive)
-            *   **Cons**: It’s intrusive, it doesn’t capture on-screen interactions very well (screen-less), and it’s difficult to analyze. Someone has to watch it.
-            *   Some of these issues can be resolved -- we can sync the video capture with screen capture, for instance.
-            *   However, if we’re dealing with children, at-risk populations, or delicate subject matter, the intrusiveness of a camera can be overwhelming.
-        *   **Note-taking**
-            *   **Pros**: Cheap and easy, non-intrusive, easier to analyze than video
-            *   **Cons**: Slow, not comprehensive (limited), interferes with administration (manual)
-            *   If you’re going to use note-taking as your method for capturing qualitative evaluation, I recommend you have two people: a note-taker and an administrator. That lets each focus on their own responsibilities.
-        *   **Software logging: **If we’re designing software, actually log the behavior in the software.
-            *   This is in some ways the best of both worlds.
-            *   **Pros**: Automatic/automated, allows us to focus on administering the session (passive), non-intrusive, analyzable
-            *   **Cons**: Not as comprehensive (limited), very low-level (narrow), requires working software (tech-sensitive)
-    *   **Tips for conducting successful evaluations**
-        *   1. **Run pilot studies**. Recruiting participants is hard. You want to make sure that once you start working with real subjects, you’re ready to gather real useful data. So, try out your experiment with friends, family, or coworkers before trying it with real subjects to iron out the kinks in your design and directions.
-        *   2. **Focus on feedback**. It’s tempting in qualitative evaluations to spend too much time trying to teach this one user. If the user criticizes an element of the prototype, you don’t need to explain to them the rationale. Your goal is to get feedback to design the next interface, not to teach the current user.
-        *   3. **Use questions when users get stuck**. That way, you get some information on why they’re stuck and what they’re thinking. Those questions can also be used to guide users to how they should use it to make the session less instructional.
-        *   4. **Instruct users what to do, but not how to do it**. This doesn’t always apply, but most often we want to design interfaces that users can use without any instruction whatsoever. So, in performing qualitative evaluation, give them instruction on what to do, but let them try to figure out how to do it. If they try to do it differently than you expect, then you know how to design the next interface.
-        *   5. **Capture satisfaction**. Sometimes we can get so distracted by whether or not people can use our interface that we forget to ask whether they like using our interface! So, make sure to capture user satisfaction in your qualitative evaluation.
-*   **Empirical evaluation: **evaluation based on numeric summaries or observations of a phenomenon
-    *   Most empirical evaluations are comparisons
-    *   This is where we actually do some controlled experiments and evaluate the results quantitatively.
-    *   For that, we need many more participants, and we also want to make sure we’ve addressed the big qualitative feedback first.
-    *   Then at the end, we might want to know something more quantitative.
-    *   We might want to actually measure whether the time to complete a task has changed or whether the number of sales has increased.
-    *   Goal: strong conclusions!
-    *   **Designing an empirical evaluation**
-        *   We have multiple conditions, which we call **treatments**.
-            *   These treatments could be different interfaces, different designs, different colors, whatever we’re interested in investigating.
-            *   Our goal here is to investigate the comparison between the treatments, and end up with a conclusion about how they’re different.
-            *   However, we have to be careful to make sure that the differences we observe are really due to the differences between the treatments, not due to other factors.
-                *   For example, imagine we were testing the difference between two logos, and we wanted to know what worked better: orange or teal.
-                *   However, we also make one a circle while the other is a triangle. In the end, we wouldn’t be able to comment on orange vs. teal, we could only comment on orange circle vs. teal triangle.
-                *   To make a judgment about the color, we need to make sure the color is the only thing we’re comparing.
-                *   Of course, here, this sounds silly. In practice, though, differences can be more subtle. If you were testing different layouts, you might miss that one loads a bit faster, or one uses prettier images.
-        *   Once we’ve designed the treatments, it’s time to design the experiment.
-            *   Our first question is: what do participants do? Does each participant participate in one treatment, or both?
-                *   If each participant only participates in one treatment, then our next step is easy: we split the randomly participants into two groups, and one-by-one, we have them go through their treatment. At the end, we have data from participants in one condition and data from participants in the other, and we can compare them. This is called **between-subjects** design.
-                *   We can also do a **within-subjects** experiment. With a within-subjects experiment, each participant participates in both treatments. 
-                    *   Within-subjects is beneficial because it allows us to gather twice as much data if our participant pool is limited: here, each interface would be used by 16 participants instead of just 8.
-                    *   It also allows us to do within-subjects comparisons, seeing how each individual participant was affected instead of the groups as a whole. That can help us identify some more subtle effects, like if different people had different strengths.
-                    *   However, within-subjects requires more of our subjects’ time, which can be a big problem if the treatments are each long.
-                *   However, a major lurking variable could potentially be which treatment each participant sees first, so we still have to randomly assign participants to treatment groups. But instead of assigning participants to which treatment they’re receiving, we’re **randomly assigning** them to what order they’ll receive the treatments in. That way, if the order that participants receive the treatments matters, we’ll see it.
-                    *   Throughout this example, we’ve also glossed over an important detail: random assignment. Random assignment to treatments help us control for bias. Imagine if all the smartest participants, or all the women, or all the punctual participants were assigned to the same treatment. That would clearly affect our results.
-                    *   So, we randomly assign people to groups. That might also sound obvious, but imagine if your treatment involved a lot of physical set-up. It would be tempting to run the first eight participants on one set-up, and the second eight on the other. But what if that means the more punctual participants were all in the first condition? Or what if you got better at administering the experiment during the first condition, so that participants in the second condition had a generally smoother experience? All of these are lurking variables that are controlled by random assignment.
-    *   **Hypothesis testing**
-        *   Did results arise by random chance?
-        *   Are results different enough to conclude that they’re really different?
-        *   **Null and alternative hypotheses**
-            *   Null hypothesis: we initially hypothesize that two things are equal.
-            *   The alternative hypothesis is that they are not equal.
-            *   We want to see if the difference is big enough to accept the alternative hypothesis rather than the null hypothesis; we generally do that if there is less than a 5% chance that the difference could have arisen by random chance.
-            *   In that case, we say that the difference is “statistically significant”.
-        *   This is the general process of hypothesis testing: assuming things are the same, and seeing if the data is sufficient to prove they’re different.
-        *   **The specific kind of hypothesis test you conduct depends on the kind of data that you have.**
-            *   For **nominal data**, we generally want to use a **Chi-square test**.
-                *   A Chi-square test checks to see if the distribution of values to a number of buckets is the same across two conditions.
-                *   Here, our independent variable is the conditions, treatments, etc., and our dependent variable is the distribution of values.
-                *   Our null hypothesis is that the distributions are not different, and our alternative is that they are different.
-            *   For **ordinal data**, our process is largely the same (**Chi-square test, Kolmogorov-Smirnov test, median test**)
-                *   Our independent variable are the conditions or treatments, and our dependent variable is the distribution of values across those categories.
-                *   Our null hypothesis is still that there are no differences, and our alternative is that there are differences.
-                *   For that reason, we can use the same Chi-square test on ordinal data that we used on nominal data.
-                *   However, that isn’t the absolute best thing to do: a Chi-square test doesn’t understand that the values are ordered, and so it doesn’t understand that a systematic shift across the categories is probably more notable.
-                *   So, we might instead use a test called the Kolmogorov-Smirnov test, which acts similar to a Chi-square test but with additional knowledge of the order of the categories.
-                *   We might also use a median test, which tests to see whether the medians of the samples are the same.
-                *   It’s also not uncommon to make the assumption that the ordinal data is actually interval data and use the tests specifically developed for interval data; this isn’t a good thing to do because it assumes that the ordinal categories are evenly spaced, but it’s still not uncommon to do so because of the relative ease of the test.
-            *   For **interval and ratio data**, the types of tests we use shift.
-                *   If we’re comparing between only two treatments or conditions, then we’ll use what’s called a **Student’s t-test**.
-                    *   A t-test lets us straightforwardly compare the means of two samples to see if there’s a significant chance that they’re different.
-                    *   Here, our independent variable is whatever is different about the samples, and our dependent variable is the observed values.
-                    *   Our null hypothesis is that the samples aren’t different, and our alternative is that they are.
-                    *   This same test can be used for interval and ratio data because it isn’t dependent on there existing an absolute 0 point.
-                    *   It’s worth noting that we’re only supposed to use t-tests when the data distribution is normal. If it isn’t, we should use things like the Mann-Whitney U test or the Kruskal-Wallis H test… but those topics are out of our scope. Generally, a Chi square test and a t-test will get you most of what you need… at least until we have more than three treatments.
-                *   What if we wanted to test three interfaces at the same time?
-                    *   You might be tempted to just do three t-tests or three Chi-square tests, one on each pair. This is called **repeated testing**, and the problem is that it raises the likelihood that we’ll find something that isn’t actually true, which is called a Type I Error.
-                    *   **Type 1 error**: also known as a false positive - occurs when a researcher incorrectly rejects a true null hypothesis. This means that your report that your findings are significant when in fact they have occurred by chance
-                    *   Remember, we said that we reject a null hypothesis if there’s less than a 5% chance that the data could have been so different due to randomness alone. That means that every time we run an additional test, we’re taking a 1-in-20 chance of finding something that isn’t there. So instead, we need a single test that can evaluate multiple conditions at once.
-                    *   **Chi-square test**
-                        *   For nominal and ordinal data, fortunately a Chi-square test can natively handle more than two conditions: we just have to put those conditions in.
-                        *   The weakness here is that it doesn’t tell us what is different; it merely tells us that there exist differences.
-                        *   So, if the Chi-square test on all the groups shows a difference, it’s acceptable to then follow-up with pairwise Chi-square tests between the conditions to drill into what the difference actually is.
-                    *   For interval and ratio data, however, we need to use a different test altogether: **an Analysis of Variance, or ANOVA**.
-                        *   A one-way ANOVA test lets us compare between three or more groups simultaneously. So, we could test between three or four different interfaces at the same time.
-                        *   We can even do something called a two-way ANOVA, where we look at two independent variables at the same time. We could check three interfaces against two genders to see if performance is a function of both gender and interface selection.
-                        *   So, ANOVA is what we use when we have more than two categories and interval or ratio data.
-                    *   Notice, however, that there’s still one assumption in every test we’ve looked at so far: we’ve always assumed that the independent variable is nominal. What if the independent variable was instead interval or ratio? We might want to look at the relationship between time using an interface and speed completing a certain task to understand the learning curves for different interfaces.
-                        *   We could do this by breaking the interval data into categories, but we could also do this by performing a regression. **Regression analyses** are used when both the independent and dependent variables are interval or ratio data.
-            *   **Binomial data**
-                *   A **binomial test** is used when we have binomial data. Binomial data is data with only two possible outcomes, like a coin flip. For us, we might have outcomes like ‘success’ or ‘failure’. We could be curious which interface allows a user to succeed at a task with greater frequency.
-                *   What can be tricky here is that our data actually looks continuous: we might say “in Treatment 1, users succeed 55.4% of the time, while in Treatment 2, users succeed 46.5% of the time.” That looks continuous.
-                *   Due to some details of how the math works, though, we don’t use standard t-tests with binomial data: instead, we use specific binomial t-tests.
-                *   There are two kinds: with a one-sample binomial t-tests, we test to see if a distribution is different from some arbitrary number. For example, we could test a probability against random chance by testing it against 0.5.
-                *   With a two-sample binomial t-test, we test to see if two distributions are different. So, we could test to see if one interface leads to success more often than the other.
-            *   Even here, we’re only scratching the surface of the tests that are out there. There are also paired tests, repeated measures tests, tests with one tail vs. two tails… but that’s all advanced stuff. 
-    *   **Tips for doing empirical evaluations**
-        *   1. **Control what you can, document what you can’t**. Try to make your treatments as identical as possible. However, if there are systematic differences between them, document and report that.
-        *   2. **Limit your variables**. It can be tempting to try to vary lots of different things and monitor lots of other things, but that just leads to noisy, difficult data that probably will generate some false conclusions. Instead, focus on varying only 1 or 2 things, and monitor only a handful of things in response. There’s nothing at all wrong with only modifying one variable and only monitoring one variable.
-        *   3. **Work backwards in designing your experiment**. A common mistake I’ve seen is to just gather a bunch of data and figure out how to analyze it later. That’s messy and doesn’t lead to very reliable conclusions. Decide at the start what question you want to answer, then decide the analysis to use, then decide the data to gather. 
-        *   4. **Script your analyses in advance**. Ronald Coase once said, “If you torture the data long enough,  nature will always confess.” What the quote means is that if we analyze and reanalyze data long enough, we can always find conclusions, but that doesn’t mean they’re actually there. So, decide in advance what analysis you’ll do, and do it -- if it doesn’t give you the results you want, don’t reanalyze it until it does.
-        *   5. **Pay attention to power**. Power refers to the size of a difference that a test can detect, and generally it’s dependent on how many participants you have. If you want to detect a small effect, then you’ll need a lot of participants. If you only care about detecting a big effect, you can get by with fewer.
-*   **Empirical Tests (IV = Independent Variables, DV = Dependent Variables)**
-*   ![screenshot](/images_Exam2/image7.png)
-*   **Predictive evaluation: **evaluation based on systematic application of pre-established principles and heuristics
-    *   Predictive evaluation is specifically evaluation without users.
-    *   In user-centered design, this is obviously not our favorite kind of evaluation.
-    *   Evaluation with real users, though, is oftentimes slow, so it’s useful for us to have ways we can do some simple evaluation on a day-to-day basis. Predictive evaluation is alright to use as part of a rapid feedback process. It lets us keep the user in mind even if we’re not bringing the user into the conversation.
-    *   Along the way, we might also want to iterate more quickly by predicting what the results of the user evaluation will be.
-    *   The important thing is to make sure we’re using it appropriately: predictive evaluation shouldn’t be used where we could be doing qualitative or empirical evaluation; it should be used where we wouldn’t otherwise be doing any evaluation.
-    *   **Types of predictive evaluation**
-        *   **Heuristic evaluation**: simply to hand our interface and these guidelines to a few experts to evaluate.
-            *   Each individual evaluator inspects the interface alone, and identifies places where the interface violates a heuristic.
-            *   We might sit with the expert while they perform the evaluation, or they might generate a report.
-            *   Heuristics are useful because they give us small snapshots into the way people might think about our interfaces.
-            *   If we take those heuristics to an extreme, though, we could go so far as to develop models of the way people think about our interfaces.
-        *   During our needfinding exercises, we developed a model of our users’ tasks. **Model-based evaluation**: we take that model and trace through it in the context of the task.
-            *   Let’s use a GOMS model as an example.
-            *   Just as we computed a GOMS model for what users did in some context, we can compute a GOMS model for what they will do in our new interface.
-            *   Then, we can compare these models side-by-side to see how our interface changes the task and evaluate whether it aids efficiency.
-            *   We can also use our models of user profiles to evaluate whether the new design meets these criteria.
-            *   If we take model-based evaluation to an extreme, we can actually get to the point of simulation-based evaluation.
-        *   **AI agents**
-            *   At that point, we might construct an artificially intelligent agent that interacts with our interface the way a human would. Ivory and Hearst did some research on such automated evaluation back in 2001.
-            *   More recently, work has been done to create even more human-like models of users, like some work done by a research group at the Human-Centered Design Group at the Institute for Information Technology in Germany.
-            *   Developing that agent is an enormous task on its own, but if we’re working on a big long-term project like Facebook or in a high-stakes environment like air traffic controlling, having a simulation of a human that we can run hundreds of thousands of times on different interface prototypes would be extremely useful.
-        *   **Cognitive walk-through**: most likely the most common type of predictive evaluation you’ll encounter
-            *   In a cognitive walkthrough, we step through the process of interacting with an interface, mentally simulating at each stage what the user is seeing, thinking, and doing.
-            *   At every stage of the process, I want to investigate this from the perspective of the gulfs of execution and evaluation.
-                *   Is it reasonable to expect the user to cross the gulf of execution? Is the right action sufficiently obvious? Is the response to the action the one the user would expect?
-                *   Is it reasonable to expect the feedback to cross the gulf of evaluation? Does the feedback show the user what happened? Does the feedback confirm the user chose the right action?
-            *   The weakness of cognitive walkthroughs is that we’re the designers, so it likely seems to us that the design is fine. After all, we designed it.
-            *   But if you can sufficiently put yourself in the user’s shoes, you can start to uncover some useful takeaways without involving real users.
-*   **Evaluation timeline**
-    *   When we discussed prototyping, we talked about how over time, our prototypes will get higher and higher fidelity. Something similar happens with evaluation: ⇒ **Over time, our evaluation methods will change**. The evaluations we use early on differ from what we likely use later.
-    *   **Purpose: Formative vs summative**
-        *   Throughout most of the design process, our evaluations are **formative**, meaning their primary purpose is to help us redesign and improve our interface.
-        *   At the end, though, we might want to do something more **summative** to conclude the design process, especially if we want to demonstrate that the new interface is better.
-        *   ![screenshot](/images_Exam2/image20.png)
-    *   **Approach: Qualitative vs empirical vs predictive**
-        *   Our early evaluations are likely to be more interpretive, qualitative, and informal. Their goal is to help us improve.
-        *   Our later evaluations are likely to be more empirical, controlled, and formal. Their goal is to demonstrate or assess change.
-        *   ![screenshot](/images_Exam2/image10.png)
-    *   **Data: Qualitative vs quantitative**
-        *   Our early data is likely to be more qualitative, while our later data is likely to be more quantitative.
-        *   ![screenshot](/images_Exam2/image12.png)
-    *   **Setting: Lab testing vs field testing**
-        *   Where the evaluation takes place: in the controlled lab environment or in the field.
-        *   Generally, when we’re testing early interfaces, we probably want to do it in more of a lab setting, not live.
-        *   Later on, we might do real live field testing.
-        *   That lets us focus exclusively on the interface early on, then transition to focusing on the interface in context later.
-        *   ![screenshot](/images_Exam2/image17.png)
-    *   Of course, none of these are hard and fast rules: we’ll likely do some qualitative evaluation later sometimes, or some field testing early, but, in general, this is likely the order we’re likely to follow.
-*   **Steps to ensure your evaluation is useful**
-    *   Regardless of whether we’re doing qualitative, empirical, or predictive evaluation, these steps remain the same. Those different types of evaluation just fill in the experiment we design, and inform the performance measures, data analysis, and conclusions.
-    *   ![screenshot](/images_Exam2/image18.png)
-    *   **1. Define the task you’re examining.**
-        *   Depending on your place in the design process, this could be very large or very small.
-        *   If we were designing Facebook, it could be as simple as posting a status update or as complicated as navigating amongst and using several pages.
-        *   It could involve context and constraints, like taking notes while running or looking up a restaurant address without touching the screen.
-        *   Whatever it is, we want to start by clearly identifying what task we’re going to investigate.
-    *   **2. Define the performance measures.**
-        *   How are we going to evaluate the user’s performance?
-        *   Qualitatively, it could be based on their own spoken or written feedback about the experience.
-        *   Quantitatively, we could measure efficiency in certain activities or count the number of mistakes.
-        *   Defining performance measures helps us avoid confirmation bias: it makes sure we don’t just pick out whatever observations confirm our hypotheses.
-    *   **3. Develop the experiment.**
-        *   How will we find users’ performance on the performance measures?
-        *   If we’re looking qualitatively, will we have them think aloud while using the tool, or will we have them send in a survey after they’re done?
-        *   If we’re looking quantitatively, what will we measure? What will we control, and what will we vary?
-        *   This is also where we ask questions about whether our assessment measures are reliable and valid, and whether the users we are testing are generalizable.
-    *   **4. Recruit participants.**
-        *   As part of the ethics process, we make sure we’re recruiting participants who are aware of their rights and contributing willingly.
-    *   **5. Do the experiment!**
-        *   We have them walk through what we outlined previously.
-    *   **6. Analyze the data.**
-        *   We focus on what the data informs us about our performance measures.
-        *   It’s important that we stay close to what we outlined initially -- it can be tempting to just look for whatever supports our design, but we want to be impartial.
-        *   If we find some evidence that suggests our interface is good in ways we didn’t anticipate, we can always do a follow-up experiment to test if we’re right.
-    *   **7. Summarize the data in a way that informs our ongoing design process.**
-        *   What did our data say was working? What could be improved?
-        *   The results of this experiment then become a part of our design life cycle.
-        *   We investigated users’ needs, developed alternatives, made a prototype, and put the prototype in front of users.
-        *   Based on this experience, we now have the data to develop a better understanding of the users’ needs, to revisit our alternatives, and to improve our prototypes by raising their fidelity for further testing and incorporating the lessons we just learned.
-        *   ![screenshot](/images_Exam2/image5.png)
-**[GOAL #3] Students will understand the type of data that comes out of each type of evaluation, and how it can be used.**
-*   **Reliability**: whether or not some assessment of some phenomenon is consistent (returns the same results for the same phenomenon).
-    *   In an assessment measure, we want it to be reliable across multiple trials. Otherwise its conclusions are random and not very useful
-    *   _If we were to conduct the same procedure again, how likely is it that we’d get the same results?_ That’s reliability.
-*   **Validity**: how accurately an assessment measures reality (if the results actually reflect the underlying phenomenon)
-    *   An assessment could be completely reliable, but completely inaccurate.
-    *   Validity is closely connected to a principle called generalizability.
-    *   _How accurately does our data actually capture the real-world phenomenon we care about?_ That’s validity.
-*   **Generalizability**: the extent to which we can apply lessons we learn in our evaluation to broader audiences of people (if the results can be used to predict phenomena beyond what it measured)
-    *   For example, we might find the kinds of people that volunteer for usability studies have different preferences than the regular user. So, the conclusions we find in those volunteers might not be generalizable in measuring what we want to measure.
-    *   _To what extent can we apply these conclusions to people that weren’t in the evaluation?_ That’s generalizability.
-*   **Precision**: measure of how specific some assessment is (the level of detail a measurement supplies)
-    *   _How specific are our conclusions and observations?_ That’s precision.
-*   **Tips on what you might choose to evaluate**
-    *   In designing evaluations, it’s **critical that we define what we’re evaluating**.
-    *   Without that, we generally tend to bottom out in vague assessments about whether users like our interfaces or not.
-    *   1. **Efficiency**. How long does it take users to accomplish certain tasks? This is one of the classic metrics for evaluating interfaces: can one interface accomplish a task in fewer actions or less time than another? You might test this with predictive models, or you might actually time users in completing these tasks. Still, this paints a narrow picture of usability.
-    *   2. **Accuracy**. How many errors do users commit while accomplishing the task? This is typically a pretty empirical question, although we could address it qualitatively as well. Ideally, we want an interface that reduces the number of errors a user commits while performing a task. Both efficiency and accuracy, however, examine the narrow setting of an expert user using an interface. That brings us to the third metric...
-    *   3. **Learnability**. Sit a new user down in front of the interface. Define some standard for expertise. How long does it take the user to hit that level of expertise? Expertise here might range from performing a particular action to something like creating an entire document.
-    *   4. **Memorability**. Similar to learnability, memorability refers to the user’s ability to remember how to use an interface over time. Imagine you have a user learn an interface, then leave and come back a week later. How much do they remember? Ideally, you want interfaces that need only be learned once, which means high memorability.
-    *   5. **Satisfaction**. When we forget to look for the other metrics, we bottom-out in a general notion of ‘satisfaction’, but that doesn’t mean it’s unimportant. We need to operationalize it, though. Experience is things like users’ enjoyment of the system or the cognitive load they experience while using the system. To avoid social desirability bias, we might want to evaluate this in creative ways, like finding how many participants actually download an app they tested after the session is over.
-    *   Regardless of what you want to evaluate, it’s important that you very clearly articulate at the beginning: what you’re evaluating, what data you’re gathering, and what analysis you will use. These three things should match up to address your research questions.
-
-**[GOAL #4] Students will understand each individual type of evaluation and what conclusions it can generate.**
-*   See the giant outline above
-*   ![screenshot](/images_Exam2/image22.png)
-
----
 
 **2.9 Interfaces and Politics**
 
